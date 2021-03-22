@@ -96,6 +96,7 @@ class Newproducts  extends Component<Iprop,Istate>{
         <div className="product">
         
         {ProductDetails[this.state.pageno].map((product,index)=> (<Product key={index} name={product.name} price={product.price} offervalue={product.offervalue} url={product.url}/>))}
+         {/* <p>{productsarray}</p> */}
          {/* {productsarray.map((product,index)=> (<Product key={index} name={product.title} price={product.price} offervalue={product.offervalue} url={product.url}/>))} */}
           {/* {console.log(this.state.productsarray[0])} */}
           {/* {console.log(this.state.productsarray[1].title)} */}
