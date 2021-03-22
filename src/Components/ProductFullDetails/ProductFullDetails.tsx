@@ -1,10 +1,10 @@
-import { Component } from "react";
+// import { Component } from "react";
 import { RouteComponentProps } from "react-router";
 import Header from "../Header/Header";
-interface Iprops extends RouteComponentProps{
-    name:string;
-    price:number;
-}
+// interface Iprops extends RouteComponentProps{
+//     name:string;
+//     price:number;
+// }
 export const ProductFullDetails = (name:string,price:number)=>{
    
     // render(){
