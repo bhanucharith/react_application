@@ -1,0 +1,26 @@
+.categories-container{
+    height: 400px;
+ }
+ .items{
+     display:flex;
+     align-items: center;
+     width: 250px;
+     height: 10%;
+     background-color: rgba(255,255,255,1);
+     border: 1px solid #f3f3f3;
+     cursor: pointer;
+ }
+
+ .heading{
+     background-color: #F8D766;
+ 
+ }
+ .items i{
+     font-size: 15px;
+     padding: 0px 10px;
+ }
+ 
+ .items small{
+ 
+     margin-left: auto;
+ }

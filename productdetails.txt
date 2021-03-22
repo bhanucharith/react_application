@@ -1,0 +1,131 @@
+newProducts =[[
+  { name:"shirt" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9-spAiTs6GWb7lt5tgrBvMfhycpClujOeDw&usqp=CAU"},
+  { name:"watch" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJ0skU6AgJJIAs21ritYEiSNS3mOptN2fHw&usqp=CAU"},
+  { name:"spectacles" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKeNi3xro7QSXrfsYuEtwnPlNN0XNifh62-Q&usqp=CAU"},
+  { name:"bag" , price:"$150", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmjKCwr9gfdkVsOTre7mJNRuPRDBn1OboH8g&usqp=CAU"}
+],
+[
+  { name:"mobile" , price:"$500", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQycOPamgTRf0uHoJJpnWhCq8fkEvIdwmYkog&usqp=CAU"},
+  { name:"watch" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQknYyTZhAnMHp7e9vtHIS2nnqc-pzTBrrZSA&usqp=CAU"},
+  { name:"spectacles" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKeNi3xro7QSXrfsYuEtwnPlNN0XNifh62-Q&usqp=CAU"},
+  { name:"bag" , price:"$150", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmjKCwr9gfdkVsOTre7mJNRuPRDBn1OboH8g&usqp=CAU"}
+],
+[
+  { name:"..shirt" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9-spAiTs6GWb7lt5tgrBvMfhycpClujOeDw&usqp=CAU"},
+  { name:"oppo mobile" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi1CyjhtWdmI7ReM0oyL456MjTtwQBe7atBA&usqp=CAU"},
+  { name:"spectacles" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKeNi3xro7QSXrfsYuEtwnPlNN0XNifh62-Q&usqp=CAU"},
+  { name:"watch" , price:"$450", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq-1dcetH0LBxLckChgFBa90YMgUDKmetChA&usqp=CAU"}
+]
+]
+
+electronics =[
+    { name:"TV" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRREG5zAFCBI4eTqd1bQ8WyIwF14-MfjBJk2A&usqp=CAU"},
+    { name:"watch" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJ0skU6AgJJIAs21ritYEiSNS3mOptN2fHw&usqp=CAU"},
+    { name:"Ear phones" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjZ6rlzYauw1NdJyK2bZLhM9MMW8K0UFXoDQ&usqp=CAU"},
+    { name:"Ear pods" , price:"$150", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjp6jkZcm_GqZBqqxA0i5cgFMNQDbxZgg_CQ&usqp=CAU"},
+    { name:"Fridge" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgWatsAnUS0vMqbYJSCSGZ_VyyJK5woFrBXw&usqp=CAU"},
+    { name:"watch" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJ0skU6AgJJIAs21ritYEiSNS3mOptN2fHw&usqp=CAU"},
+    { name:"Laptop" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQopq1otcO710G0ghmH-qvbjVL0q4rzgXAYw&usqp=CAU"},
+    { name:"smartphone" , price:"$150", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9BxqqkmMaKwrGs7_bhui7U_SOE2xEc_cL0w&usqp=CAU"}
+  
+]
+
+clothing =[
+    { name:"shirt" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9-spAiTs6GWb7lt5tgrBvMfhycpClujOeDw&usqp=CAU"},
+    { name:"tshirt" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBTPlGDQL7Oz1TQbXuIudoR-Z_ev0v27_hbw&usqp=CAU"},
+    { name:"pant" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYihm9JLfrW4JFN6GibagcuVi2FhumjRRcjg&usqp=CAU"},
+    { name:"shirt" , price:"$150", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEDX7Nt4LAyL2rJhFCAcS6ss54sQhZVMcB0w&usqp=CAU"},
+    { name:"shirt" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9-spAiTs6GWb7lt5tgrBvMfhycpClujOeDw&usqp=CAU"},
+    { name:"blue shirt" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfQqp3CkTrevELFvAF1zEehiWa_15OLcgckw&usqp=CAU"},
+    { name:"white shirt" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7voAAwHrPNv2o1oB_0YS3lGljPHNPVPey8w&usqp=CAU"},
+    { name:"Tshirt" , price:"$150", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw0sPkk1qJjM116RdnAoQZ9kMp7q3zlxtZUQ&usqp=CAU"}
+  
+]
+
+healthAndBeauty  =[
+    { name:"Beauty products" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl6GB3PUtwJjN5wM-Gm9267Bfy9kBnMXjuFQ&usqp=CAU"},
+    { name:"health care" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzCWXE2tqVvWQ9E3nSDTwcjRXEV75ot7hjoQ&usqp=CAU"},
+    { name:"health care" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzCWXE2tqVvWQ9E3nSDTwcjRXEV75ot7hjoQ&usqp=CAU"},
+    { name:"health care" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzCWXE2tqVvWQ9E3nSDTwcjRXEV75ot7hjoQ&usqp=CAU"},
+    { name:"Beauty products" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl6GB3PUtwJjN5wM-Gm9267Bfy9kBnMXjuFQ&usqp=CAU"},
+    { name:"health care" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzCWXE2tqVvWQ9E3nSDTwcjRXEV75ot7hjoQ&usqp=CAU"},
+    { name:"Beauty products" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl6GB3PUtwJjN5wM-Gm9267Bfy9kBnMXjuFQ&usqp=CAU"},
+    { name:"health care" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzCWXE2tqVvWQ9E3nSDTwcjRXEV75ot7hjoQ&usqp=CAU"},
+  
+]
+
+
+watches =[
+    { name:"watch" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV5Imb5EEwtTz6gMm9iFsi5dvF7Slwc2PXaw&usqp=CAU"},
+    { name:"watch" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJ0skU6AgJJIAs21ritYEiSNS3mOptN2fHw&usqp=CAU"},
+    { name:"watch" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQvs3_wDS2NB9GBd0uy2iuuCXHdUrJeEkWoA&usqp=CAU"},
+    { name:"watch" , price:"$150", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPEW0Nem8ghm3ctSfP9BTSL28wXIbLn23q6Q&usqp=CAU"},
+    { name:"watch" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHY2NbQkT6p24UUOwBYxmplKH3L929M77J9A&usqp=CAU"},
+    { name:"watch" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJ0skU6AgJJIAs21ritYEiSNS3mOptN2fHw&usqp=CAU"},
+    { name:"watch" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLWzEP9YGkhh3UKYmO1AIa5fnQOUyHEaGU9g&usqp=CAU"},
+    { name:"watch" , price:"$150", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1QYPKzI-omwm9pli2qAFSI5iFy9aLpLL0ag&usqp=CAU"}
+  
+]
+
+
+jwellery =[
+    { name:"jwellery" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRli5oeOa_wnWRxV2CBH9VwCn3UuAgn0yDUxw&usqp=CAU"},
+    { name:"jwellery" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbaOSPqcWN8NXafMRFUqKCI8zEW1FRu7JiVQ&usqp=CAU"},
+    { name:"jwellery" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqCqI4KjlWw8pxGN2jdw2SmIX_M2G8ltvfww&usqp=CAU    "},
+    { name:"jwellery" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHThVqtCkOczKSrXaGuZJsLIVwABdMbOOOBQ&usqp=CAU"},
+    { name:"jwellery" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzHIj98_NlviUbD3t-Kplap10OwphVhUadng&usqp=CAU"},
+    { name:"jwellery" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDglPhu6B8wmEw6vE5Bx9vZsCFhuof5v-TWA&usqp=CAU    "},
+    { name:"jwellery" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmcgSHfdIZvEmYSU1ci84IQR2WEn-Pem9lBw&usqp=CAU"},
+    { name:"jwellery" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJW7HFjT5S424KNJt7IH-m7waaAPlLcOYYlA&usqp=CAU"},
+  
+]
+
+
+footware=[
+    { name:"shoe" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsj4esS7rU9LJ15NBEZGrrVI5EtkPTOCX-HQ&usqp=CAU"},
+    { name:"shoe" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-YDuj9nZFL15z_i7mtJ1oJKtC_RxLqbJiCg&usqp=CAU"},
+    { name:"shoe" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeQoEeXhCKts9hKI8ubltumgD3LAbFfLqq5w&usqp=CAU"},
+    { name:"shoe" , price:"$150", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNW4QDMn7r6skOPDVBWpzn1mP3wEHNcwXCAw&usqp=CAU"},
+    { name:"shoe" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgb_tIHqHW4NRHgo7DaRS_cbRYNkjZKxQiHA&usqp=CAU"},
+    { name:"shoe" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZp1V61rSAeLSK_tHq7dedTMo0PD8MJ8h0iA&usqp=CAU"},
+    { name:"loafers" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDj9m0nriYfD0aiS2RmEtdWBfamAklC-uxSg&usqp=CAU"},
+    { name:"shoe" , price:"$150", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV-Mi5u8f-LnCE8OsDThczRNxWanEcV_YPVA&usqp=CAU"}
+  
+]
+
+
+
+kids  =[
+    { name:"toys" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0II4D7PCLRmaTjFPCR9hRGH5KrTb6szTOuQ&usqp=CAU"},
+    { name:"Toys" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-IzbtAuIjwALPMDAeBSllaWHtn3OCXtGqJQ&usqp=CAU"},
+    { name:"kids wear" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS35HA3tXOO278a0LtzVx5nBrE5pq7HRU1VWA&usqp=CAU"},
+    { name:"kids wear" , price:"$150", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKGrP-81XtC1vHEulGm88keKZlctXeLZU_Yg&usqp=CAU"},
+    { name:"Kids wear" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdGq4NVZ9lHCrGGv3oBHaCUCbZhK02p0_PFA&usqp=CAU"},
+    { name:"Cycle" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmHRzT6nRFROSFkPqhCMKQO-KTGlahUHltUQ&usqp=CAU"},
+    { name:"kids wear" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKGrP-81XtC1vHEulGm88keKZlctXeLZU_Yg&usqp=CAU"},
+    { name:"Toys" , price:"$150", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_uVzLx2S8zE7O5xaRc-cdvht9SGiq87Cuvw&usqp=CAU"}
+]
+
+
+sports =[
+    { name:"batminton racket" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxXMSwyYUQg4UAAyqoAk7sDmxWbfTzmrOGFA&usqp=CAU"},
+    { name:"football" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH2jJNDg6FL595Aevkskud3ps4lP9qVNd8bA&usqp=CAU"},
+    { name:"vollyball" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTdMclXqXWEJRr5UAk2CsQqSmGbwwliJ-Q3g&usqp=CAU"},
+    { name:"carrom board" , price:"$150", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQImWy4Gep7xctmhmO-gcDsMGSqHePydEpwzw&usqp=CAU"},
+    { name:"Rubics cube" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4k43193TUjvSErkmRixPP1T_HQIleDrIOTg&usqp=CAU"},
+    { name:"snake & ladder" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTtykeGssO5cEzjK9ZX6A-Xr7UM3j90O0VyA&usqp=CAU"},
+    { name:"cricket bat" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS51456Rp2fhmpq1-D3AEeKCrx9V0s2hYT75g&usqp=CAU"},
+    { name:"cricket kit" , price:"$150", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWVHs8TKw_XPohFogpsT-96VErD2tgrHe9zw&usqp=CAU"}
+]
+
+
+todaysOffers =[
+    { name:"shirt" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9-spAiTs6GWb7lt5tgrBvMfhycpClujOeDw&usqp=CAU"},
+    { name:"kids wear" , price:"$150", offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKGrP-81XtC1vHEulGm88keKZlctXeLZU_Yg&usqp=CAU"},
+    { name:"jwellery" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDglPhu6B8wmEw6vE5Bx9vZsCFhuof5v-TWA&usqp=CAU    "},
+    { name:"Rubics cube" , price:"$200", offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4k43193TUjvSErkmRixPP1T_HQIleDrIOTg&usqp=CAU"},
+    { name:"snake & ladder" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTtykeGssO5cEzjK9ZX6A-Xr7UM3j90O0VyA&usqp=CAU"},
+    { name:"watch" , price:"$400", offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJ0skU6AgJJIAs21ritYEiSNS3mOptN2fHw&usqp=CAU"},
+    { name:"Laptop" , price:"$100", offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQopq1otcO710G0ghmH-qvbjVL0q4rzgXAYw&usqp=CAU"},
+
+]

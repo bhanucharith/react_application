@@ -1,0 +1,33 @@
+.item{
+    width: 23%;
+}
+.item:hover{
+    width: 24%;
+}
+.image{
+   background-position: center;
+   background-size: cover;
+   cursor: pointer;
+}
+.item .offervalue{
+    padding:10px;
+    margin: 5px;
+    background-color: tomato;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+    line-height: 10px;
+     color: white;
+     float: right;
+}
+.item .add-to-cart{
+    display: block;
+    padding:10px;
+    margin:5px;
+    width:100%;
+    background-color: #f0c363;
+    text-align: center;
+    color: rgba(34, 32, 32, 0.884);
+    cursor: pointer;
+}

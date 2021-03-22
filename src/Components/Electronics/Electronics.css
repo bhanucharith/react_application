@@ -1,0 +1,17 @@
+.body{
+    display: flex;
+    margin: 10px 130px;
+    justify-content: space-around;
+}
+.categories-heading{
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    background-color: rgba(23, 118, 206, 0.87);
+    color: #fff;
+}
+.specific-products{
+    display: flex;
+    margin-left: 20px;
+    width: 700px;
+}

@@ -1,0 +1,11 @@
+.cart-details{
+    width:200px;
+    padding:10px;
+    margin:10px;
+    height: 170px;
+    background-color: white;
+}
+.cart-details h3{
+    display: block;
+    padding: auto;
+}

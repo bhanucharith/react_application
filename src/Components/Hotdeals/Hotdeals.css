@@ -1,0 +1,65 @@
+.hotdeals{
+    width:250px;
+    padding:2px 10px;
+    background-color:rgba(255,255,255,1);
+    height: 350px;
+    line-height: 5px;
+    cursor: pointer;
+}
+
+.hotdeals-title{
+
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f1f1f1;
+    margin-bottom: 0;
+}
+.hotdeals .deal-item{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ-uIhi4w-Icg341EVE691BFaWj6huSay9RA&usqp=CAU');
+    height: 70%;
+    background-size: cover;
+
+}
+
+.deal-item .offervalue{
+    padding:10px;
+    margin: 5px;
+    background-color: tomato;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+    line-height: 10px;
+     color: white;
+    float: right;
+    
+}
+
+.offertime{
+    display: flex;
+    padding-top: 175px;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: auto;
+}
+.offertime p{
+    background-color: rgba(255, 255, 255, 0.678);
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 12px;
+    font-weight: bold;
+}
+
+.hotdeals .item-name{
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.795);
+}
+.hotdeals .review-star{
+    color: orange;
+    margin: 10px;
+}
+.hotdeals .price{
+    font-size: 14px;
+    padding:5px 10px;
+}

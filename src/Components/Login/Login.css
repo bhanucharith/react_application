@@ -1,0 +1,33 @@
+.loginform{
+    align-items: center;
+    width:400px;
+    padding:20px;
+    margin: 30px auto;
+    background: #fff;
+    border:2px solid black;
+    border-radius: 5px;
+}
+
+.loginform label,input,button{
+    display: block;
+}
+
+.loginform input{
+    padding:7px;
+    margin: 5px 0px;
+}
+.loginform button{
+    width: 100%;
+    padding:7px;
+    font-size: 20px;
+    background-color: #f0c368;
+    border: 2px solid #f0c368;
+
+}
+.loginform button:hover{
+    background-color: white;
+    color: #f0c368;
+}
+.loginform input{
+    width:100%;
+}
