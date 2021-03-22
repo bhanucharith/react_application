@@ -1,5 +1,5 @@
 // import { Component } from "react";
-import { RouteComponentProps } from "react-router";
+// import { RouteComponentProps } from "react-router";
 import Header from "../Header/Header";
 // interface Iprops extends RouteComponentProps{
 //     name:string;

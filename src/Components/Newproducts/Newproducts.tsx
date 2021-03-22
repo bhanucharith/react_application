@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 import React, { Component } from 'react';
 import Product from '../Product/Product';
 import './Newproducts.css';
@@ -40,25 +40,25 @@ interface Istate{
 }
 interface Iprop{
 }
-const api = axios.create({
-  baseURL: 'https://jsonplaceholder.typicode.com/todos/',
-})
+// const api = axios.create({
+//   baseURL: 'https://jsonplaceholder.typicode.com/todos/',
+// })
 
 class Newproducts  extends Component<Iprop,Istate>{
   
 
 
-    constructor(props:Iprop){
-      super(props);
-      api.get('/').then(res=>{
-        this.setState({productsarray:res.data});
+    // constructor(props:Iprop){
+    //   super(props);
+    //   api.get('/').then(res=>{
+    //     this.setState({productsarray:res.data});
 
         
-        // console.log(this.state.productsarray);
-        // console.log(res.data[1].title);
-      })
+    //     // console.log(this.state.productsarray);
+    //     // console.log(res.data[1].title);
+    //   })
 
-    }
+    // }
     public state: Istate={
       pageno:0,
      productsarray:[],
