@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 import React, { Component } from "react";
 import Categories from "../Categories/Categories";
 import Header from "../Header/Header";
@@ -33,36 +33,36 @@ interface prod{
 interface Istate{
     productsData:prod[];
 }
-const api =axios.create({
-    baseURL:"https://fakestoreapi.herokuapp.com/products/"
-})
+// const api =axios.create({
+//     baseURL:"https://fakestoreapi.herokuapp.com/products/"
+// })
 
 class Electronics extends Component<Iprop,Istate>{
 
-    constructor(props:Iprop){
-        super(props);
-        api.get('/').then(res=>{
-            console.log(res.data);
-            this.setState({productsData:res.data});
-            console.log(this.state.productsData[0]);
+    // constructor(props:Iprop){
+    //     super(props);
+    //     api.get('/').then(res=>{
+    //         console.log(res.data);
+    //         this.setState({productsData:res.data});
+    //         console.log(this.state.productsData[0]);
             
-        })
+    //     })
 
-    }
+    // }
     public state:Istate={
         // productsData:{} as prod,
         productsData:[],
     }
-    createproduct = async ()=>{
-       api.post('/',{id:100,title:"test",description:"sample"});
+    // createproduct = async ()=>{
+    //    api.post('/',{id:100,title:"test",description:"sample"});
     
-    }
-    fetchproducts =()=>{
-        console.log("form fetch products");
-        api.get('/').then(res=>{
-            console.log(res.data);
-        })
-    }
+    // }
+    // fetchproducts =()=>{
+    //     console.log("form fetch products");
+    //     api.get('/').then(res=>{
+    //         console.log(res.data);
+    //     })
+    // }
     render(){
         // this.createproduct();
         // this.fetchproducts();
