@@ -60,7 +60,7 @@ class Header  extends Component<Iprops> {
           <li onClick={()=>this.props.history.push("/clothing")}>CLOTHING</li>
           <li onClick={()=>this.props.history.push("/healthandbeauty")}>HEALTH & BEAUTY</li>
           <li onClick={()=>this.props.history.push("/watches")}>WATHCES</li>
-          <li onClick={()=>this.props.history.push("/jwellery")}>JWELLERY</li>
+          <li onClick={()=>this.props.history.push("/jewellery")}>JEWELLERY</li>
           <li onClick={()=>this.props.history.push("/footware")}>FOOWARE</li>
           <li onClick={()=>this.props.history.push("/kids")}>KIDS</li>
           <li onClick={()=>this.props.history.push("/sports")}>SPORTS</li>

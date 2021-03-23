@@ -39,7 +39,7 @@ class Mycart extends Component<IProp>{
                
             <div className="product">
                 {/* <p>{this.props.products[0].name}</p> */}
-             {this.props.products.map((product)=> (<CartItems name={product.name} price={product.price} offervalue={product.offervalue} url={product.image}/>))}
+             {this.props.products.map((product)=> (<CartItems name={product.name} price={product.price} offervalue={product.offervalue} url={product.image} cart={true} />))}
              </div>
             </div>
             </div>

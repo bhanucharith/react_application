@@ -31,7 +31,7 @@ class Kids extends Component{
             <div className="specific-products">
                
             <div className="product">
-             {ProductDetails.map((product,index)=> (<Product key={index} name={product.name} price={product.price} offervalue={product.offervalue} url={product.url}/>))}
+             {ProductDetails.map((product,index)=> (<Product key={index} name={product.name} price={product.price} offervalue={product.offervalue} url={product.url} category={'kids'}/>))}
              </div>
             </div>
             </div>

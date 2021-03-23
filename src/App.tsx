@@ -9,7 +9,7 @@ import Electronics from "./Components/Electronics/Electronics";
 import Footware from "./Components/Footware/Footware";
 import HealthAndBeauty from "./Components/HealthAndBeauty/HealthAndBeauty";
 import Homepage from "./Components/Homepage/Homepage";
-import Jwellery from "./Components/Jwellery/Jwellery";
+import Jewellery from "./Components/Jewellery/Jewellery";
 import Kids from "./Components/Kids/Kids";
 import Login from "./Components/Login/Login";
 import Mycart from "./Components/Mycart/Mycart";
@@ -46,13 +46,13 @@ function App() {
             <Route path="/footware" exact component={Footware} />
             <Route path="/login" exact component={Login} />
             <Route path="/sports" exact component={Sports} />
-            <Route path="/jwellery" exact component={Jwellery} />
+            <Route path="/jewellery" exact component={Jewellery} />
             <Route path="/healthandbeauty" exact component={HealthAndBeauty} />
             <Route path="/kids" exact component={Kids} />
             <Route path="/todaysoffer" exact component={TodayOffer} />
             <Route path="/mycart" exact component={Mycart} />
             <Route path="/wishlist" exact component={Wishlist} />
-            <Route path="/productfulldetails"  component={ProductFullDetais} />
+            <Route path="/productfulldetails/:category"  component={ProductFullDetais} />
           </Switch>
         </BrowserRouter>
       </Provider>

@@ -1,4 +1,4 @@
-import {ProductType,ADD_TO_WISHLIST , ADD_TO_CART, REMOVE_FROM_CART} from './product.types';
+import {ProductType,ADD_TO_WISHLIST , ADD_TO_CART, REMOVE_FROM_CART, REMOVE_FROM_WISHLIST} from './product.types';
 export interface IproductItem{
     name:string;
     price:number;
@@ -47,6 +47,20 @@ const product = (state = intialState,action:ProductType): IProduct => {
 
 
             };
+            case REMOVE_FROM_WISHLIST:
+                let indexOfWishlist :number=-1;
+                for(let i=0;i<state.productsInWishlist.length;i++)
+                {
+                    if(state.productsInWishlist[i].image===action.productItem.image)
+                    {
+                        indexOfWishlist=i;
+                        break;
+                    }
+                }
+                return{
+                    ...state,
+                   productsInWishlist:state.productsInWishlist.slice(0,indexOfWishlist).concat(state.productsInWishlist.splice(indexOfWishlist+1))
+                };
         default:
             return state
     }

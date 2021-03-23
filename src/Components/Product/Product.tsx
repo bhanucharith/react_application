@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { connect, ConnectedProps } from "react-redux";
-import { RouteComponentProps, withRouter } from "react-router-dom";
+import {  RouteComponentProps, withRouter } from "react-router-dom";
 import { Dispatch } from "redux";
 import { addToCart ,addToWishlist} from "../../store/product/product.action";
 import { IproductItem } from "../../store/product/product.reducer";
-import { ProductFullDetails } from "../ProductFullDetails/ProductFullDetails";
 import "./Product.css";
 
 const mapDispatchToProps = (dispatch: Dispatch) => {
@@ -20,6 +19,7 @@ interface props extends RouteComponentProps,ConnectedProps<typeof connector> {
   offervalue: string;
   price: number;
   url: string;
+  category:string;
 }
 interface IState {
   productsInCart: number;
@@ -33,8 +33,9 @@ class Product extends Component<props, IState> {
   sendDetails =()=>{
     // ProductFullDetails(this.props.offervalue);
     // this.props.history.push(`/productfulldetails/${this.props.name}/${this.props.price}/`)
-    ProductFullDetails(this.props.name,this.props.price);
-    this.props.history.push('/productfulldetails');
+    // ProductFullDetails(this.props.name,this.props.price);
+    this.props.history.push({pathname: `/productfulldetails/${this.props.category}`, search:`?name=${this.props.name}&price=${this.props.price}`});
+    // <Link to={`/productfulldetails/${this.props.name}`}></Link>
   }
   render() {
     return (

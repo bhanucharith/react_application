@@ -15,9 +15,15 @@ class Homepage extends Component<Iprop,Istate> {
     isloading:true,
   };
   componentDidMount(){
+    console.log("In component did mount method");
     setTimeout(()=>{this.changeloadingstate()},1000);
   }
-
+  shouldComponentUpdate(){
+    console.log("In should component update method");
+    if(this.state.isloading)
+    return true;
+    return false;
+  }
   changeloadingstate =()=>{
     this.setState({isloading:false});
   }

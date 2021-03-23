@@ -1,13 +1,14 @@
 import { Component } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { Dispatch } from "redux";
-import { removeFromCart } from "../../store/product/product.action";
+import { removeFromCart, removeFromWishlist } from "../../store/product/product.action";
 import { IproductItem } from "../../store/product/product.reducer";
 
 import './CartItems.css';
 const mapDispatchToProps = (dispatch: Dispatch) => {
     return {
       productsInCart: (item: IproductItem) => dispatch(removeFromCart(item)),
+      productsInWishlist: (item: IproductItem) => dispatch(removeFromWishlist(item)),
     };
   };
   
@@ -17,10 +18,30 @@ interface props extends ConnectedProps<typeof connector> {
     offervalue: string;
     price: number;
     url: string;
+    cart:boolean;
 }
 class CartItems extends Component<props>{
+    select = ()=>{
+       if(this.props.cart){
+        this.props.productsInCart({
+            name: this.props.name,
+            price: this.props.price,
+            offervalue: this.props.offervalue,
+            image: this.props.url,
+            })
+       }
+       else{
+        this.props.productsInWishlist({
+            name: this.props.name,
+            price: this.props.price,
+            offervalue: this.props.offervalue,
+            image: this.props.url,
+            })
+       }
+    }
 
     render(){
+        
         return(
              <div className="cartItem-container">
                  <div className="item-image" style={{  backgroundImage: `url(${this.props.url})` }}></div>
@@ -34,16 +55,9 @@ class CartItems extends Component<props>{
                         <i className="fa fa-star-o"></i>
                      </div>
                      <p>${this.props.price}</p>
-                     <button onClick={() =>
-                        this.props.productsInCart({
-                        name: this.props.name,
-                        price: this.props.price,
-                        offervalue: this.props.offervalue,
-                        image: this.props.url,
-                        })
-                         }
+                     <button onClick={ this.select}
                         className="remove-button">
-                            Remove from cart</button>
+                            Remove</button>
                  </div>
              </div>
         );
