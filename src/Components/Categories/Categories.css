@@ -21,6 +21,12 @@
  }
  
  .items small{
- 
      margin-left: auto;
  }
+
+ @media screen and (max-width: 480px) {
+    .categories-container{
+        display: none;
+    }
+
+}

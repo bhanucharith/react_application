@@ -5,6 +5,7 @@ import Hotdeals from '../Hotdeals/Hotdeals';
 import Loading from '../Loading/loading';
 import Newproducts from '../Newproducts/Newproducts';
 import Offers from '../Offers/Offers';
+import './Homepage.css';
 interface Istate{
   isloading:boolean;
 }

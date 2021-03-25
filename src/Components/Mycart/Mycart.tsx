@@ -10,21 +10,25 @@ const mapStateToProps = (reduxStates: RootState) => {
       products: reduxStates.product.productsInCart,
     })
   }
-  const connector = connect(mapStateToProps);
-  interface IProp extends ConnectedProps<typeof connector> {}
+const connector = connect(mapStateToProps);
+interface IProp extends ConnectedProps<typeof connector> {}
 class Mycart extends Component<IProp>{
 
-    
+   
     totalValue(){
      let total = 0;
      for(let i=0;i<this.props.products.length;i++)
      {
-       total+=this.props.products[i].price;
+       total+=this.props.products[i].price * this.props.products[i].quantity;
      }
       return total;
     }
     render(){
-
+        
+        let emptyStatement;
+        if(this.props.products.length===0){
+          emptyStatement=<p> No products In Cart</p>;
+        }
         return(
             <div>
                 
@@ -38,8 +42,8 @@ class Mycart extends Component<IProp>{
             <div className="specific-products">
                
             <div className="product">
-                {/* <p>{this.props.products[0].name}</p> */}
-             {this.props.products.map((product)=> (<CartItems name={product.name} price={product.price} offervalue={product.offervalue} url={product.image} cart={true} />))}
+                {emptyStatement}
+             {this.props.products.map((product,index)=> (<CartItems key={index} id={product.id} name={product.name} price={product.price} offervalue={product.offervalue} url={product.image} cart={true} quantity={product.quantity} />))}
              </div>
             </div>
             </div>

@@ -1,8 +1,8 @@
 .item{
-    width: 23%;
+    width: 170px;
 }
 .item:hover{
-    width: 24%;
+    width: 175px;
 }
 .image{
    background-position: center;
@@ -30,4 +30,14 @@
     text-align: center;
     color: rgba(34, 32, 32, 0.884);
     cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .item{
+        width: 250px;
+    }
+    .item:hover{
+        width: 255px;
+    }
+    
 }

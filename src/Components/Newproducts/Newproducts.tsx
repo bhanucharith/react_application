@@ -1,67 +1,37 @@
-import axios from 'axios';
+// import axios from 'axios';
 import React, { Component } from 'react';
+import { newProducts } from '../../productdetails';
 import Product from '../Product/Product';
 import './Newproducts.css';
-const ProductDetails =[[
-  { name:"shirt" , price:200, offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9-spAiTs6GWb7lt5tgrBvMfhycpClujOeDw&usqp=CAU"},
-  { name:"watch" , price:400, offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJ0skU6AgJJIAs21ritYEiSNS3mOptN2fHw&usqp=CAU"},
-  { name:"spectacles" , price:100, offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKeNi3xro7QSXrfsYuEtwnPlNN0XNifh62-Q&usqp=CAU"},
-  { name:"bag" , price:150, offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmjKCwr9gfdkVsOTre7mJNRuPRDBn1OboH8g&usqp=CAU"}
-],
-[
-  { name:"vivo mobile" , price:500, offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQycOPamgTRf0uHoJJpnWhCq8fkEvIdwmYkog&usqp=CAU"},
-  { name:"watch" , price:400, offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQknYyTZhAnMHp7e9vtHIS2nnqc-pzTBrrZSA&usqp=CAU"},
-  { name:"spectacles" , price:100, offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKeNi3xro7QSXrfsYuEtwnPlNN0XNifh62-Q&usqp=CAU"},
-  { name:"bag" , price:150, offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmjKCwr9gfdkVsOTre7mJNRuPRDBn1OboH8g&usqp=CAU"}
-],
-[
-  { name:"..shirt" , price:200, offervalue:"20%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9-spAiTs6GWb7lt5tgrBvMfhycpClujOeDw&usqp=CAU"},
-  { name:"oppo mobile" , price:400, offervalue:"25%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi1CyjhtWdmI7ReM0oyL456MjTtwQBe7atBA&usqp=CAU"},
-  { name:"spectacles" , price:100, offervalue:"40%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKeNi3xro7QSXrfsYuEtwnPlNN0XNifh62-Q&usqp=CAU"},
-  { name:"watch" , price:450, offervalue:"30%", url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq-1dcetH0LBxLckChgFBa90YMgUDKmetChA&usqp=CAU"}
-]
-]
-interface prod{
-  // id:number;
-  // title:string;
-  // price:number;
-  // category:string;
-  // description:string;
-  // image:string;
-  userId:number;
-  id:number;
-  title:string;
-  completed:string;
-}
+
 
 interface Istate{
   pageno:number;
-   productsarray:prod[];
+  //  productsarray:prod[];
 }
 interface Iprop{
 }
-const api = axios.create({
-  baseURL: 'https://jsonplaceholder.typicode.com/todos/',
-})
+// const api = axios.create({
+//   baseURL: 'https://jsonplaceholder.typicode.com/todos/',
+// })
 
 class Newproducts  extends Component<Iprop,Istate>{
   
 
 
-    constructor(props:Iprop){
-      super(props);
-      api.get('/').then(res=>{
-        this.setState({productsarray:res.data});
+    // constructor(props:Iprop){
+    //   super(props);
+    //   api.get('/').then(res=>{
+    //     this.setState({productsarray:res.data});
 
         
-        // console.log(this.state.productsarray);
-        // console.log(res.data[1].title);
-      })
+       
+    //   })
 
-    }
+    // }
     public state: Istate={
       pageno:0,
-     productsarray:[],
+    // productsarray:[],
     }
     incrementPage =()=>{
       if(this.state.pageno<2)
@@ -95,7 +65,7 @@ class Newproducts  extends Component<Iprop,Istate>{
       
         <div className="product">
         
-        {ProductDetails[this.state.pageno].map((product,index)=> (<Product key={index} name={product.name} price={product.price} offervalue={product.offervalue} url={product.url} category={'newproducts'}/>))}
+        {newProducts[this.state.pageno].map((product,index)=> (<Product key={index} id={product.id} name={product.name} price={product.price} offervalue={product.offervalue} url={product.url} category={'newproducts'}/>))}
          {/* <p>{productsarray}</p> */}
          {/* {productsarray.map((product,index)=> (<Product key={index} name={product.title} price={product.price} offervalue={product.offervalue} url={product.url}/>))} */}
           {/* {console.log(this.state.productsarray[0])} */}

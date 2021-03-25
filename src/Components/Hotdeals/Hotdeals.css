@@ -63,3 +63,10 @@
     font-size: 14px;
     padding:5px 10px;
 }
+
+@media screen and (max-width: 480px) {
+    .hotdeals{
+       width: 100%;
+    }
+  
+}

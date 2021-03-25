@@ -23,7 +23,10 @@ class Wishlist extends Component<IProp>{
       return total;
     }
     render(){
-
+      let emptyStatement;
+        if(this.props.products.length===0){
+          emptyStatement=<p> No products In Wishlist</p>;
+        }
         return(
             <div>
                 
@@ -37,8 +40,8 @@ class Wishlist extends Component<IProp>{
             <div className="specific-products">
                
             <div className="product">
-                {/* <p>{this.props.products[0].name}</p> */}
-             {this.props.products.map((product)=> (<CartItems name={product.name} price={product.price} offervalue={product.offervalue} url={product.image} cart={false}/>))}
+                {emptyStatement}
+             {this.props.products.map((product,index)=> (<CartItems key={index} id={product.id} name={product.name} price={product.price} offervalue={product.offervalue} url={product.image} cart={false} quantity={1}/>))}
              </div>
             </div>
             </div>

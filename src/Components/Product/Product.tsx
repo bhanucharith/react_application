@@ -10,11 +10,13 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
   return {
     productsInCart: (item: IproductItem) => dispatch(addToCart(item)),
     ProductsInWishlist: (item:IproductItem)=> dispatch(addToWishlist(item)),
+    // productsRemoveCart: (item: IproductItem) => dispatch(removeFromCart(item)),
+    // products: reduxStates.product.productsInCart,
   };
 };
-
-const connector = connect(null, mapDispatchToProps);
+const connector = connect(null,mapDispatchToProps);
 interface props extends RouteComponentProps,ConnectedProps<typeof connector> {
+  id:number;
   name: string;
   offervalue: string;
   price: number;
@@ -29,14 +31,38 @@ class Product extends Component<props, IState> {
   public state: IState = {
     productsInCart: 0,
   };
-  // onClick={()=>this.props.history.push(`/productfulldetails/${this.props.name}/${this.props.price}/`)}
   sendDetails =()=>{
-    // ProductFullDetails(this.props.offervalue);
-    // this.props.history.push(`/productfulldetails/${this.props.name}/${this.props.price}/`)
-    // ProductFullDetails(this.props.name,this.props.price);
+    
     this.props.history.push({pathname: `/productfulldetails/${this.props.category}`, search:`?name=${this.props.name}&price=${this.props.price}`});
-    // <Link to={`/productfulldetails/${this.props.name}`}></Link>
   }
+
+  // alreadyExist =()=>{
+  //   this.props.productsRemoveCart({
+  //     id: this.props.id,
+  //     name: this.props.name,
+  //     price: this.props.price,
+  //     offervalue: this.props.offervalue,
+  //     image: this.props.url,
+  //     quantity: 1 ,
+  //   })
+  //   let quantityToAdd=1;
+  //   for(let i=0;i<this.props.products.length;i++)
+  //   {
+  //     if(this.props.products[i].id===this.props.id){
+  //     quantityToAdd+=this.props.products[i].quantity;
+  //     break;
+  //     }
+  //   }
+  //   this.props.productsInCart({
+  //     id: this.props.id,
+  //     name: this.props.name,
+  //     price: this.props.price,
+  //     offervalue: this.props.offervalue,
+  //     image: this.props.url,
+  //     quantity: quantityToAdd ,
+    
+  //   })
+  // }
   render() {
     return (
       <div className="item">
@@ -62,12 +88,15 @@ class Product extends Component<props, IState> {
         </div>
         <p className="price">${this.props.price}</p>
         <small className="add-to-cart"
-          onClick={() =>
+          onClick={()=>
             this.props.productsInCart({
+              id: this.props.id,
               name: this.props.name,
               price: this.props.price,
               offervalue: this.props.offervalue,
               image: this.props.url,
+              quantity: 1 ,
+            
             })
           }
         >
@@ -76,10 +105,12 @@ class Product extends Component<props, IState> {
         <small className="add-to-cart"
           onClick={() =>
             this.props.ProductsInWishlist({
+              id: this.props.id,
               name: this.props.name,
               price: this.props.price,
               offervalue: this.props.offervalue,
               image: this.props.url,
+              quantity:1,
             })
           }
         >

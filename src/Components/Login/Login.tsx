@@ -5,7 +5,6 @@ import Header from "../Header/Header";
 import './Login.css';
 
 import Loginpage from 'landingpage-login/Login';
-// import Header from "header-component-typescript/Header";
 
 class Login extends Component{
     render(){

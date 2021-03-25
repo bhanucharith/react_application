@@ -1,7 +1,7 @@
 .body{
     display: flex;
-    margin: 10px 130px;
-    justify-content: space-around;
+    padding: 5px 7%;
+    justify-content: space-between;
 }
 .categories-heading{
     text-align: center;
@@ -10,8 +10,19 @@
     background-color: rgba(23, 118, 206, 0.87);
     color: #fff;
 }
-.specific-products{
-    display: flex;
-    margin-left: 20px;
-    width: 700px;
+.specific-products{  
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.925);
+}
+
+@media screen and (max-width: 480px) {
+    .categories-body{
+        width: 100%;
+    }
+    .specific-products{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+  
 }

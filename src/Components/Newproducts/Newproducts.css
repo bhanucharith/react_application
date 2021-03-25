@@ -1,5 +1,6 @@
 .newproducts{
-    width: 700px;
+    margin: 5px 0px;
+    width: 70%;
     background-color: white;
 }
 
@@ -8,7 +9,7 @@
     border-bottom: 2px solid #f1f1f1;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
+    height:max-content;
     padding-left: 15px;
 }
 .newproducts .newproducts-heading{
@@ -17,7 +18,7 @@
 }
 .newproducts .types{
     display: flex;
-
+    flex-wrap: wrap;
 }
 .newproducts .types li{
     list-style: none;
@@ -38,7 +39,6 @@ div.product{
     height: 200px;
     border:2px solid #ccc;
 }
-
 
 .item-name{
     margin: 5px;
@@ -61,4 +61,11 @@ div.product{
     margin: 5px;
     padding:5px;
     background-color: whitesmoke;
+}
+
+@media screen and (max-width: 480px) {
+    .newproducts{
+       width: 100%;
+    }
+  
 }

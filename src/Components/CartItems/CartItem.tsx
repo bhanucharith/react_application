@@ -14,34 +14,43 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
   
 const connector = connect(null, mapDispatchToProps);
 interface props extends ConnectedProps<typeof connector> {
+    id:number;
     name: string;
     offervalue: string;
     price: number;
     url: string;
+    quantity:number;
     cart:boolean;
 }
 class CartItems extends Component<props>{
     select = ()=>{
        if(this.props.cart){
         this.props.productsInCart({
+            id: this.props.id,
             name: this.props.name,
             price: this.props.price,
             offervalue: this.props.offervalue,
             image: this.props.url,
+            quantity:1,
             })
+         
        }
        else{
         this.props.productsInWishlist({
+            id: this.props.id,
             name: this.props.name,
             price: this.props.price,
             offervalue: this.props.offervalue,
             image: this.props.url,
+            quantity: 1,
             })
        }
     }
 
     render(){
-        
+        let quantity;
+        if(this.props.cart)
+        quantity = <p>{`quantity=${this.props.quantity}`}</p>;
         return(
              <div className="cartItem-container">
                  <div className="item-image" style={{  backgroundImage: `url(${this.props.url})` }}></div>
@@ -54,7 +63,9 @@ class CartItems extends Component<props>{
                         <i className="fa fa-star"></i>
                         <i className="fa fa-star-o"></i>
                      </div>
-                     <p>${this.props.price}</p>
+                     <p>${this.props.price} </p>
+                     
+                     {quantity}
                      <button onClick={ this.select}
                         className="remove-button">
                             Remove</button>

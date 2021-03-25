@@ -1,9 +1,11 @@
 import {ProductType,ADD_TO_WISHLIST , ADD_TO_CART, REMOVE_FROM_CART, REMOVE_FROM_WISHLIST} from './product.types';
 export interface IproductItem{
+    id:number;
     name:string;
     price:number;
     offervalue:string;
     image:string;
+    quantity:number;
 }
 interface IProduct{
     productsInCart:IproductItem[];
@@ -19,17 +21,52 @@ const intialState: IProduct ={
 const product = (state = intialState,action:ProductType): IProduct => {
     switch (action.type){
         case ADD_TO_CART:
-            return{
-                ...state,
-                productsInCart:[...state.productsInCart,action.productItem],
-            };
+           
+            let indexofadd=-1;
+            for(let i=0;i<state.productsInCart.length;i++)
+            {
+                if(action.productItem.id===state.productsInCart[i].id)
+                {
+                    
+                    indexofadd=i;
+                    action.productItem.quantity+=state.productsInCart[i].quantity;
+
+                }
+            }
+            // if(!presentInCart){
+            //     return{
+            //         ...state,   
+            //         productsInCart:[...state.productsInCart,action.productItem],
+            //     };
+            // }
+            // else{
+                return{
+                    ...state,
+                    // productsInCart:state.productsInCart.slice(0,index).concat(state.productsInCart.splice(index+1)),
+                    productsInCart:state.productsInCart.splice(0,indexofadd).concat(action.productItem).concat(state.productsInCart.splice(indexofadd+1)),
+                }
+            // }     
         case ADD_TO_WISHLIST:
+            let indexToWishlist :number=-1;
+                for(let i=0;i<state.productsInWishlist.length;i++)
+                {
+                    if(state.productsInWishlist[i].image===action.productItem.image)
+                    {
+                        indexToWishlist=i;
+                        break;
+                    }
+                }
+            if(indexToWishlist===-1)
             return{
                 ...state,
                 productsInWishlist:[...state.productsInWishlist,action.productItem],
             };
+            else
+            return{
+                ...state,
+            }
         case REMOVE_FROM_CART:
-            let index:number=-1;
+            let index=-1;
             for(let i=0;i<state.productsInCart.length;i++)
             {
                 if(state.productsInCart[i].image===action.productItem.image)

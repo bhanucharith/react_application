@@ -6,10 +6,11 @@
 
 .main-header{
     width: 100%;
-    height: 150px;
+    height: auto;
     background-color: #3A84CD;
     align-items: center;
-    margin: 0;
+    padding: 0px 7%;
+
     /* padding: 0px 60px 0px 130px; */
 }
 
@@ -18,8 +19,8 @@
     flex-direction: row;
     float: right;
     flex-wrap: wrap;
-    height: 20%;
-    margin-right: 130px;
+    height: auto;
+    /* margin-right: 130px; */
 }
 
 .top-nav li{
@@ -34,39 +35,40 @@
 
 .title{
     display:flex;
-    height: 45%;
     width:100%;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 40px 130px;
+    /* padding: 10px 130px; */
     cursor: pointer;
+    justify-content: space-between;
 }
 
 .title h1{
-    width: 25%;
+    width: auto;
    text-align: left;
    color: rgba(255, 255, 255, 0.925);
 }
 .searchBox{
     display: flex;
     align-items: center;
-    width: 60%;
+
    
 }
 .searchBox .categories{
     padding:10px 15px;
-    width:20%;
+    width:auto;
     cursor: pointer;
 }
 
 .searchBox input{
     display: inline;
-    padding:10px 15px;
+    padding:10px 5px;
     text-align: left;
-    width:65%;
+    width: 85%;
+  
     
 }
 .searchBox .search{
-    width:7%;
     padding:10px 15px;
     background-color: #f8D766;
     border-color: rgba(255, 174, 0, 0.671);
@@ -74,20 +76,20 @@
     cursor: pointer;
 }
 .cart-value{
-    width:15%;
     display: flex;
     justify-content: center;
     background-color: rgba(15, 14, 14, 0.363);
     border-radius: 3px;
-    height: 40px;
+    padding: 5px 5px;
+    margin:5px 0px;
     cursor: pointer;
 }
 
 .cart-value .cart-logo{
-    width:30%;
     font-size: 15px;
     color: rgba(255, 255, 255, 0.877);
     border-right: 1px solid rgba(255, 255, 255, 0.596);
+    padding:5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,17 +119,15 @@
 
 .main-nav{
     display:flex;
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     width:100%;
     background-color:  rgba(15, 14, 14, 0.363);
-    padding: 0px 130px;
+    /* padding: 0px 130px; */
 
 }
 
 .main-nav li{
     list-style: none;
-    height: 100%;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.753);  
     min-width: max-content;
@@ -148,4 +148,11 @@
     float: right;
     padding : 10px 0px 10px 100px;
     color: rgba(255, 174, 0, 0.671);
+}
+
+@media screen and (max-width: 480px) {
+    .main-header{
+        padding: 5px;
+    }
+
 }

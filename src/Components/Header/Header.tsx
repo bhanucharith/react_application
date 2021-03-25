@@ -19,7 +19,7 @@ class Header  extends Component<Iprops> {
     let total = 0;
     for(let i=0;i<this.props.products.length;i++)
     {
-      total+=this.props.products[i].price;
+      total+=this.props.products[i].price * this.props.products[i].quantity;
     }
      return total;
    }

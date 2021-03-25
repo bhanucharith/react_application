@@ -1,6 +1,6 @@
 .cartItem-container{
     width: 600px;
-    height: 170px;
+    height: fit-content;
     border:2px solid #ddd;
     border-radius: 4px;
     background-color: white;
@@ -28,4 +28,30 @@
     padding:5px;
     background-color: #f0c363;
     border: #f0c363;
+}
+
+.quantity{
+    display: flex;
+    font-size: 20px;
+
+}
+.quantity .plus, .minus{
+    padding: 5px;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgba(19, 18, 18, 0.781);
+    margin: 5px;
+}
+.quantity small{
+    padding:5px;
+    margin: 5px 0px;
+}
+@media screen and (max-width: 480px) {
+  .cartItem-container{
+     width: 100%;
+     display: block;
+  }
+  .item-image{
+      display: block;
+      width: 100%;
+  }
 }
