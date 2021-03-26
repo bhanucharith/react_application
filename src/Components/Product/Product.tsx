@@ -33,36 +33,10 @@ class Product extends Component<props, IState> {
   };
   sendDetails =()=>{
     
-    this.props.history.push({pathname: `/productfulldetails/${this.props.category}`, search:`?name=${this.props.name}&price=${this.props.price}`});
+    this.props.history.push({pathname: `/productfulldetails/${this.props.category}`, search:`?name=${this.props.name}&id=${this.props.id}`});
   }
 
-  // alreadyExist =()=>{
-  //   this.props.productsRemoveCart({
-  //     id: this.props.id,
-  //     name: this.props.name,
-  //     price: this.props.price,
-  //     offervalue: this.props.offervalue,
-  //     image: this.props.url,
-  //     quantity: 1 ,
-  //   })
-  //   let quantityToAdd=1;
-  //   for(let i=0;i<this.props.products.length;i++)
-  //   {
-  //     if(this.props.products[i].id===this.props.id){
-  //     quantityToAdd+=this.props.products[i].quantity;
-  //     break;
-  //     }
-  //   }
-  //   this.props.productsInCart({
-  //     id: this.props.id,
-  //     name: this.props.name,
-  //     price: this.props.price,
-  //     offervalue: this.props.offervalue,
-  //     image: this.props.url,
-  //     quantity: quantityToAdd ,
-    
-  //   })
-  // }
+ 
   render() {
     return (
       <div className="item">

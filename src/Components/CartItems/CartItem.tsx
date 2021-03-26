@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { Dispatch } from "redux";
-import { removeFromCart, removeFromWishlist } from "../../store/product/product.action";
+import { addToCart, removeFromCart, removeFromWishlist } from "../../store/product/product.action";
 import { IproductItem } from "../../store/product/product.reducer";
 
 import './CartItems.css';
@@ -9,6 +9,7 @@ const mapDispatchToProps = (dispatch: Dispatch) => {
     return {
       productsInCart: (item: IproductItem) => dispatch(removeFromCart(item)),
       productsInWishlist: (item: IproductItem) => dispatch(removeFromWishlist(item)),
+      Increasequantity: (item: IproductItem) => dispatch(addToCart(item)),
     };
   };
   
@@ -46,11 +47,40 @@ class CartItems extends Component<props>{
             })
        }
     }
-
+    quantity = (add:boolean)=>{
+        let qua=-1;
+        if(add)
+        qua=1
+        if(this.props.cart && this.props.quantity>=1){
+         this.props.Increasequantity({
+             id: this.props.id,
+             name: this.props.name,
+             price: this.props.price,
+             offervalue: this.props.offervalue,
+             image: this.props.url,
+             quantity:qua,
+             })
+          
+        }
+        if(this.props.quantity===1 && !add){
+            this.props.productsInCart({
+                id: this.props.id,
+                name: this.props.name,
+                price: this.props.price,
+                offervalue: this.props.offervalue,
+                image: this.props.url,
+                quantity:0,
+                })
+             
+           }
+     }
     render(){
         let quantity;
         if(this.props.cart)
-        quantity = <p>{`quantity=${this.props.quantity}`}</p>;
+        quantity = <p><small className="minus" onClick={()=>this.quantity(false)}><i className="fa fa-minus-square"></i></small>
+                    {`quantity=${this.props.quantity}`}
+                    <small className="plus" onClick={()=>this.quantity(true)}><i className="fa fa-plus-square"></i></small>
+                    </p>;
         return(
              <div className="cartItem-container">
                  <div className="item-image" style={{  backgroundImage: `url(${this.props.url})` }}></div>

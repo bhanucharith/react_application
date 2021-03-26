@@ -34,7 +34,7 @@ class Electronics extends Component<Iprop,Istate>{
         console.log("In Component did mount");
         try{
             Get_all_products().then((res)=>{
-           this.setState({productsData:res.data});
+        //    this.setState({productsData:res.data});
            console.log(this.state.productsData);
         });
         }

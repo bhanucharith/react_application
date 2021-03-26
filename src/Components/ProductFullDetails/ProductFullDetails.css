@@ -1,0 +1,28 @@
+.product-details{
+    padding: 0 10%;
+    
+}
+.product-container{
+    display: flex;
+    height:fit-content;
+    background-color:white;
+
+}
+.product-image{
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+}
+.product-description{
+    display: block;
+    width: 60%;
+    padding:0px 40px;
+}
+.product-name{
+    text-transform: uppercase;
+    font-size: larger;
+}
+.product-container .offervalue{
+    display: block;
+}
