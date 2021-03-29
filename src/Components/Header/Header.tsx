@@ -35,7 +35,7 @@ class Header  extends Component<Iprops> {
           <li><i className="fa fa-user"></i> My Account</li>
           <li onClick={()=>this.props.history.push("/wishlist")} ><i className="fa fa-heart"></i> Wishlist</li>
           <li onClick={()=>this.props.history.push("/mycart")}><i className="fa fa-shopping-cart"></i> My cart</li>
-          <li><i className="fa fa-check"></i> Checkout</li>
+          <li onClick={()=>this.props.history.push("/checkout")}><i className="fa fa-check"></i> Checkout</li>
           <li onClick={()=>this.props.history.push("/login")}><i className="fa fa-lock"></i> Login</li>
         </nav>
         <div className="title">

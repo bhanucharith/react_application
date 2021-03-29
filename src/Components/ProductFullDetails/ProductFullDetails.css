@@ -1,23 +1,28 @@
 .product-details{
-    padding: 0 10%;
+        padding: 0 10%;
+       
+        width: 50%;
     
 }
 .product-container{
+    
     display: flex;
     height:fit-content;
     background-color:white;
+    flex-wrap: wrap;
 
 }
 .product-image{
-    width: 30%;
+    width: 300px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size:cover ;
     background-position: center;
 }
 .product-description{
     display: block;
-    width: 60%;
-    padding:0px 40px;
+    
+    
 }
 .product-name{
     text-transform: uppercase;

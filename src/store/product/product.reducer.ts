@@ -1,4 +1,4 @@
-import {ProductType,ADD_TO_WISHLIST , ADD_TO_CART, REMOVE_FROM_CART, REMOVE_FROM_WISHLIST} from './product.types';
+import {ProductType,ADD_TO_WISHLIST , ADD_TO_CART, REMOVE_FROM_CART, REMOVE_FROM_WISHLIST, ADD_TO_CHECKOUT} from './product.types';
 export interface IproductItem{
     id:number;
     name:string;
@@ -10,12 +10,14 @@ export interface IproductItem{
 interface IProduct{
     productsInCart:IproductItem[];
     productsInWishlist:IproductItem[];
+    productsInCheckout:IproductItem[];
 
 }
 
 const intialState: IProduct ={
     productsInCart :[],
     productsInWishlist:[],
+    productsInCheckout:[],
 }
 
 const product = (state = intialState,action:ProductType): IProduct => {
@@ -65,6 +67,13 @@ const product = (state = intialState,action:ProductType): IProduct => {
             return{
                 ...state,
             }
+        case ADD_TO_CHECKOUT:
+            return{
+                ...state,
+                productsInCheckout:[...state.productsInCart, ...state.productsInCheckout],
+                productsInCart:[],
+            }
+                
         case REMOVE_FROM_CART:
             let index=-1;
             for(let i=0;i<state.productsInCart.length;i++)

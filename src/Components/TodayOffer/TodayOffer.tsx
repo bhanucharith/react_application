@@ -22,7 +22,7 @@ class TodayOffer extends Component{
             <div className="specific-products">
                
             <div className="product">
-             {todaysoffer.map((product,index)=> (<Product key={index} id={product.id} name={product.name} price={product.price} offervalue={product.offervalue} url={product.url} category={'todaysoffer'}/>))}
+             {todaysoffer.map((product,index)=> (<Product key={index} id={product.id} name={product.name} price={product.price} offervalue={product.offervalue} url={product.url} category={product.category}/>))}
              </div>
             </div>
             </div>

@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { createStore } from "redux";
 import "./App.css";
+import Checkout from "./Components/Checkout/Checkout";
 import Clothing from "./Components/Clothing/Clothing";
 import Electronics from "./Components/Electronics/Electronics";
 import Footware from "./Components/Footware/Footware";
@@ -52,6 +53,7 @@ function App() {
             <Route path="/todaysoffer" exact component={TodayOffer} />
             <Route path="/mycart" exact component={Mycart} />
             <Route path="/wishlist" exact component={Wishlist} />
+            <Route path="/checkout" exact component={Checkout} />
             <Route path="/productfulldetails/:category"  component={ProductFullDetais} />
           </Switch>
         </BrowserRouter>

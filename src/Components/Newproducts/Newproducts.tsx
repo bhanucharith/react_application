@@ -65,7 +65,7 @@ class Newproducts  extends Component<Iprop,Istate>{
       
         <div className="product">
         
-        {newProducts[this.state.pageno].map((product,index)=> (<Product key={index} id={product.id} name={product.name} price={product.price} offervalue={product.offervalue} url={product.url} category={'newproducts'}/>))}
+        {newProducts[this.state.pageno].map((product,index)=> (<Product key={index} id={product.id} name={product.name} price={product.price} offervalue={product.offervalue} url={product.url} category={product.category}/>))}
          {/* <p>{productsarray}</p> */}
          {/* {productsarray.map((product,index)=> (<Product key={index} name={product.title} price={product.price} offervalue={product.offervalue} url={product.url}/>))} */}
           {/* {console.log(this.state.productsarray[0])} */}

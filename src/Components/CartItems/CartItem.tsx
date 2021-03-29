@@ -21,11 +21,11 @@ interface props extends ConnectedProps<typeof connector> {
     price: number;
     url: string;
     quantity:number;
-    cart:boolean;
+    place:string;
 }
 class CartItems extends Component<props>{
     select = ()=>{
-       if(this.props.cart){
+       if(this.props.place==='cart'){
         this.props.productsInCart({
             id: this.props.id,
             name: this.props.name,
@@ -51,7 +51,7 @@ class CartItems extends Component<props>{
         let qua=-1;
         if(add)
         qua=1
-        if(this.props.cart && this.props.quantity>=1){
+        if(this.props.place==='cart' && this.props.quantity>=1){
          this.props.Increasequantity({
              id: this.props.id,
              name: this.props.name,
@@ -76,7 +76,7 @@ class CartItems extends Component<props>{
      }
     render(){
         let quantity;
-        if(this.props.cart)
+        if(this.props.place==='cart')
         quantity = <p><small className="minus" onClick={()=>this.quantity(false)}><i className="fa fa-minus-square"></i></small>
                     {`quantity=${this.props.quantity}`}
                     <small className="plus" onClick={()=>this.quantity(true)}><i className="fa fa-plus-square"></i></small>
@@ -96,9 +96,9 @@ class CartItems extends Component<props>{
                      <p>${this.props.price} </p>
                      
                      {quantity}
-                     <button onClick={ this.select}
+                     {(this.props.place!=='checkout')&&(<button onClick={ this.select}
                         className="remove-button">
-                            Remove</button>
+                            Remove</button>)}
                  </div>
              </div>
         );
